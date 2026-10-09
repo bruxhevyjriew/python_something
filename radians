@@ -1,0 +1,9 @@
+import math
+
+print("Convert Degrees to Radians")
+
+d = input("Degrees: ")
+
+d = math.radians(float(d))
+
+print(d)

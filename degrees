@@ -2,6 +2,7 @@ import math
 
 print("Convert Radians to Degrees")
 print("(Only number inputs accepted)")
+
 d = input("Radians: ")
 
 d = math.degrees(float(d))
