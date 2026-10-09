@@ -1,0 +1,20 @@
+import math
+
+print("Quadratic Formula Calculator")
+
+a = input("a: ")
+b = input("b: ")
+c = input("c: ")
+print("""NOTE: Some polynomials have no roots. If this is the case, the program will return 
+an error.""")
+input("Press Enter to continue to your calculation...")
+
+a = float(a)
+b = float(b)
+c = float(c)
+
+x1 = (-b + math.sqrt((b ** 2) - (4 * a * c)))/(2 * a)
+x2 = (-b - math.sqrt((b ** 2) - (4 * a * c)))/(2 * a)
+
+print("The roots are ", x1, "and ", x2)
+print("These numbers may be the same.")
