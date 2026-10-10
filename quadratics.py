@@ -2,21 +2,21 @@ import math
 
 print("Quadratic Formula Calculator")
 while True:
-    a = input("a: ")
+    a = input("Enter a value for a: ")
     try:
         a = float(a)
         break
     except ValueError:
         print("Please input a number!")
 while True:
-    b = input("b: ")
+    b = input("Enter a value for b: ")
     try:
         b = float(b)
         break
     except ValueError:
         print("Please input a number!")
 while True:
-    c = input("c: ")
+    c = input("Enter a value for c: ")
     try:
         c = float(c)
         break
