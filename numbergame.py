@@ -6,7 +6,7 @@ y = 2 * x
 z = 0
 
 print("Guess the number!")
-print("Five guesses, 0–100.\n")
+print("Guess an integer between 1 and 100, including 1 and 100. You get five guesses.\n")
 
 while x != y:
     z = z + 1

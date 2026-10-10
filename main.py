@@ -10,7 +10,7 @@ while True:
       6: Exit\n
       """)
 
-    x = input("Select an option(1–6):\n")
+    x = input("To select an option, enter the corresponding number (1–6):\n")
     try:
         x = int(x)
         if x in options:
