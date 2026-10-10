@@ -11,19 +11,22 @@ while True:
       """)
 
     x = input("Select an option(1–6):\n")
-    x = int(x)
-    if x in options:
-        if x == 1:
-            import radians
-        elif x == 2:
-            import degrees
-        elif x == 3:
-            import quadratics
-        elif x == 4:
-            import pythagorean
-        elif x == 5:
-            import numbergame
-        elif x == 6:
-            break
-    else:
+    try:
+        x = int(x)
+        if x in options:
+            if x == 1:
+                import radians
+            elif x == 2:
+                import degrees
+            elif x == 3:
+                import quadratics
+            elif x == 4:
+                import pythagorean
+            elif x == 5:
+                import numbergame
+            elif x == 6:
+                break
+        else:
+            print("Please enter a valid input.")
+    except ValueError:
         print("Please enter a valid input.")
