@@ -19,9 +19,11 @@ while x != y:
             print("Please input a number!")
     if y == x:
         print(f"{y} is the answer. You win!")
+        input("Press Enter to continue.")
         break
     elif z == 5:
         print(f"Game Over! The correct answer was {x}.")
+        input("Press Enter to continue.")
         break
     if y > x and z != 5:
         print(f"Too high. Try again!")

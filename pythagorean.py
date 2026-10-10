@@ -21,4 +21,4 @@ a, b = a ** 2, b ** 2
 c = math.sqrt(a + b)
 
 print(f"c = {c}")
-input()
+input("Press Enter to continue.")

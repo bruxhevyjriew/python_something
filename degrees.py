@@ -8,7 +8,7 @@ while True:
         r = d
         d = math.degrees(d)
         print(f"{r} radians is about {d % 360} degrees.")
-        input()
+        input("Press Enter to continue.")
         break
     except ValueError:
         print("Please input a number!")
