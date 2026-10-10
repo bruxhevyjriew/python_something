@@ -28,9 +28,13 @@ try:
     x2 = (-b - math.sqrt((b ** 2) - (4 * a * c)))/(2 * a)
     if x1 == x2:
         print(f"This quadratic has one root at ({x1}, 0.0)")
+        input()
     else:
         print(f"This quadratic has roots at ({x1}, 0.0) and ({x2}, 0.0)")
+        input()
 except ValueError:
     print("This quadratic has no real roots.")
+    input()
 except ZeroDivisionError:
     print("Error: Division by zero")
+    input()
