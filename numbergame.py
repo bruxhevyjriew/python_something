@@ -17,15 +17,19 @@ while x != y:
             break
         except ValueError:
             print("Please input a number!")
-    if y == x:
-        print(f"{y} is the answer. You win!")
-        input("Press Enter to continue.")
-        break
-    elif z == 5:
-        print(f"Game Over! The correct answer was {x}.")
-        input("Press Enter to continue.")
-        break
-    if y > x and z != 5:
-        print(f"Too high. Try again!")
-    if y < x and z != 5:
-        print(f"Too low. Try again!")
+    if y <= 100 and y >= 0:
+        if y == x:
+            print(f"{y} is the answer. You win!")
+            input("Press Enter to continue.")
+            break
+        elif z == 5:
+            print(f"Game Over! The correct answer was {x}.")
+            input("Press Enter to continue.")
+            break
+        if y > x and z != 5:
+            print(f"Too high. Try again!")
+        if y < x and z != 5:
+            print(f"Too low. Try again!")
+    else:
+        print("Please input a number between 0 and 100!")
+        z = z - 1
