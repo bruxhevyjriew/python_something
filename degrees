@@ -1,10 +1,13 @@
 import math
 
 print("Convert Radians to Degrees")
-print("(Only number inputs accepted)")
-
-d = input("Radians: ")
-
-d = math.degrees(float(d))
-
-print(d)
+while True:
+    d = input("Radians: ")
+    try:
+        d = float(d)
+        r = d
+        d = math.degrees(d)
+        print(f"{r} radians is about {d % 360} degrees.")
+        break
+    except ValueError:
+        print("Please input a number!")

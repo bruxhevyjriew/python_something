@@ -1,9 +1,11 @@
 import math
 
 print("Convert Degrees to Radians")
-
-d = input("Degrees: ")
-
-d = math.radians(float(d))
-
-print(d)
+while True:
+    d = input("Degrees: ")
+    try:
+        r = math.radians(float(d))
+        print(f"{d} degrees is about {r % (2 * math.pi)} or {(r % (2 * math.pi))/math.pi}π radians.")
+        break
+    except ValueError:
+        print("Please input a number!")
